@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style for the T and F letters on the app -->
+    <style name="TFTheme">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for the edit text fields -->
+    <style name="ETTheme">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#50000000</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+</resources>
