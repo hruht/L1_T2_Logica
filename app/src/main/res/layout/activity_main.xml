@@ -23,6 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- First row (A, B and A^B) -->
+
     <TextView
         android:id="@+id/tvA"
         style="@style/TFTheme"
@@ -59,6 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvConjunction" />
 
     <!-- Text views for T and F. L1 = Left column, 1. row etc. -->
+
     <TextView
         android:id="@+id/tvL1"
         style="@style/TFTheme"
@@ -161,7 +163,11 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="52dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapCharacters"
+        android:digits="T,F"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvR1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -177,7 +183,11 @@
         android:layout_marginStart="88dp"
         android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapCharacters"
+        android:digits="T,F"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvR2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
@@ -192,7 +202,11 @@
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapCharacters"
+        android:digits="T,F"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvR3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.654"
@@ -208,8 +222,12 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="44dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textCapCharacters"
+        android:digits="T,F"
         android:textColor="#FFF"
+        android:maxLength="1"
+        android:singleLine="true"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/tvR4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.389"
