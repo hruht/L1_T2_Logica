@@ -7,8 +7,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var allCorrect: Int = 0
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,13 +24,7 @@ class MainActivity : AppCompatActivity() {
         val a3 = et3.text.toString()
         val a4 = et4.text.toString()
 
-        if ((a1 == "T"|| a1 == "t") && (a2 == "F"|| a2 == "f") && (a3 == "F"|| a3 == "f") && (a4 == "F"|| a4 == "f")) {
-            allCorrect = 1
-        } else {
-            allCorrect = 0
-        }
-
-        if (allCorrect == 1){
+        if ((a1 == "T") && (a2 == "F") && (a3 == "F") && (a4 == "F")) {
             onAnswerCorrect()
         } else {
             onAnswerIncorrect()
